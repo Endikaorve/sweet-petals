@@ -53,3 +53,30 @@
   font-size: var(--font-size-lg);
   color: #333;
 }
+
+@media (max-width: 576px) {
+  .main {
+    padding: 0 var(--space-md);
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .imgContainer img {
+    width: 100%;
+  }
+
+  .detailsContainer {
+    width: 100%;
+    padding: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .detailsName,
+  .detailsPrice,
+  .detailsBinomialName {
+    text-align: center;
+  }
+}

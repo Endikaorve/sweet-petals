@@ -75,3 +75,9 @@
   font-size: var(--font-size-xl);
   color: var(--color-primary);
 }
+
+@media (max-width: 576px) {
+  .main {
+    padding: 0 var(--space-md);
+  }
+}

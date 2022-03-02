@@ -17,10 +17,13 @@
   --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 2rem;
+  --space-xl: 4rem;
 
   --background-color: #ffffff;
 
   --animation-transition: 0.15s;
+
+  --breakpoint-sm: 576px;
 
   --container-max-width: 1296px;
 }

@@ -26,3 +26,10 @@
   font-weight: 600;
   color: var(--color-secondary);
 }
+
+@media (max-width: 576px) {
+  .logo {
+    --logo-height: 50px;
+    --logo-font-size: var(--font-size-xl);
+  }
+}
