@@ -39,6 +39,7 @@ const Details: NextPage = ({ flower }: any) => {
           <p className={styles.detailsWateringsPerWeek}>
             <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
           </p>
+          <button className={styles.button}>Añadir al carrito</button>
         </section>
       </main>
     </>
