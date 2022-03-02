@@ -5,7 +5,7 @@
 }
 
 .imgContainer {
-  width: 60%;
+  width: 50%;
   padding: 0 var(--space-md);
   display: flex;
   justify-content: right;
@@ -16,7 +16,7 @@
 }
 
 .detailsContainer {
-  width: 40%;
+  width: 50%;
   padding: 0 var(--space-md);
 }
 

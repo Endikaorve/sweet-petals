@@ -7,20 +7,34 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--space-md);
+  gap: var(--space-lg);
 }
 
 .article {
   --article-width: 300px;
 
+  position: relative;
   width: var(--article-width);
-  padding: var(--space-md);
   text-align: center;
   overflow: hidden;
 }
 
 .article:hover {
   cursor: pointer;
+}
+
+.articleHeightInCm {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0.25rem 0.5rem;
+
+  font-weight: 700;
+  color: white;
+
+  background-color: var(--color-primary);
+
+  z-index: 10;
 }
 
 .articleImgContainer {

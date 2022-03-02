@@ -41,6 +41,9 @@ const Home: NextPage = ({ flowers }: any) => {
               return (
                 <Link key={flower.id} href={`/details/${flower.id}`}>
                   <article className={styles.article}>
+                    <div className={styles.articleHeightInCm}>
+                      {flower.heightInCm} cm
+                    </div>
                     <div className={styles.articleImgContainer}>
                       <img
                         src={flower.imgUrl}
