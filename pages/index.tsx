@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { Flower } from "../interfaces/interfaces";
 import { flowers } from "../resources/flowers";
+import Link from "next/link";
 
 const Home: NextPage = ({ flowers }: any) => {
   const [inputText, setInputText] = useState<string>("");
@@ -37,10 +38,15 @@ const Home: NextPage = ({ flowers }: any) => {
             })
             .map((flower: Flower) => {
               return (
-                <article className={styles.article}>
-                  <img src={flower.imgUrl} className={styles.articleImg}></img>
-                  <div className={styles.articleBody}>{flower.name}</div>
-                </article>
+                <Link key={flower.id} href={`/details/${flower.id}`}>
+                  <article className={styles.article}>
+                    <img
+                      src={flower.imgUrl}
+                      className={styles.articleImg}
+                    ></img>
+                    <div className={styles.articleBody}>{flower.name}</div>
+                  </article>
+                </Link>
               );
             })}
         </section>
@@ -49,7 +55,7 @@ const Home: NextPage = ({ flowers }: any) => {
   );
 };
 
-Home.getInitialProps = () => {
+Home.getInitialProps = async () => {
   return { flowers: flowers };
 };
 
