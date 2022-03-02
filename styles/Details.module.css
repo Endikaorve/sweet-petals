@@ -21,12 +21,12 @@
 }
 
 .detailsName {
-  font-size: 32px;
+  font-size: var(--font-size-xl);
 }
 
 .detailsBinomialName {
   margin-top: var(--space-sm);
-  font-size: 24px;
+  font-size: var(--font-size-lg);
   color: var(--color-gray);
 }
 
@@ -37,19 +37,19 @@
 }
 
 .detailsHeightInCm {
-  margin-top: var(--space-md);
-  font-size: 24px;
+  margin-top: var(--space-lg);
+  font-size: var(--font-size-lg);
   color: #333;
 }
 
 .detailsWateringsPerWeek {
-  margin-top: var(--space-sm);
-  font-size: 24px;
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
   color: #333;
 }
 
 .detailsFertilizerType {
-  margin-top: var(--space-sm);
-  font-size: 24px;
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
   color: #333;
 }

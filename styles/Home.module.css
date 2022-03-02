@@ -29,9 +29,9 @@
 
 .articleHeightInCm {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  padding: 0.25rem 0.5rem;
+  top: 0;
+  right: 0;
+  padding: var(--space-xs) var(--space-sm);
 
   font-weight: 700;
   color: white;
@@ -72,6 +72,6 @@
 
 .articleBodyPrice {
   margin-top: var(--space-sm);
-  font-size: 32px;
+  font-size: var(--font-size-xl);
   color: var(--color-primary);
 }

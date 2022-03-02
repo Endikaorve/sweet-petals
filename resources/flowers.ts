@@ -82,3 +82,8 @@ export const flowers: Flower[] = [
     heightInCm: 9,
   },
 ];
+
+export const FLOWER_FERTILIZER_TYPES: any = {
+  nitrogen: "Nitrogenado",
+  phosphorus: "Fosforado",
+};

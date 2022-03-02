@@ -13,14 +13,16 @@
   align-items: center;
   gap: var(--space-md);
 
-  font-family: "DancingScript";
-  font-size: var(--logo-font-size);
-  font-weight: 600;
-  color: var(--color-secondary);
-
   cursor: pointer;
 }
 
 .logo img {
   height: var(--logo-height);
+}
+
+.logo h1 {
+  font-family: "DancingScript";
+  font-size: var(--logo-font-size);
+  font-weight: 600;
+  color: var(--color-secondary);
 }
