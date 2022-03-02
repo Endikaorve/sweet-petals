@@ -54,7 +54,7 @@
 }
 
 .articleBody {
-  margin-top: var(--space-md);
+  padding: var(--space-md) 0 var(--space-sm) 0;
 }
 
 .articleBodyName {
