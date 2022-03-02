@@ -1,12 +1,12 @@
 .inputContainer {
   width: 100%;
-  padding: 1rem 12rem 4rem 12rem;
+  margin-bottom: 4rem;
+  padding: 0 12rem;
 }
 
 .input {
   width: 100%;
-  margin-bottom: 0;
-  padding: 1rem;
+  padding: var(--space-md);
   border: none;
   border-bottom: 2px solid var(--color-gray);
   font-size: var(--font-size-lg);

@@ -1,13 +1,12 @@
 .main {
-  max-width: 1248px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   display: flex;
-  margin-top: 1rem;
 }
 
 .imgContainer {
   width: 60%;
-  padding: 0 1rem;
+  padding: 0 var(--space-md);
   display: flex;
   justify-content: right;
 }
@@ -18,7 +17,7 @@
 
 .detailsContainer {
   width: 40%;
-  padding: 0 1rem;
+  padding: 0 var(--space-md);
 }
 
 .detailsName {
@@ -26,31 +25,31 @@
 }
 
 .detailsBinomialName {
-  margin-top: 0.5rem;
+  margin-top: var(--space-sm);
   font-size: 24px;
   color: var(--color-gray);
 }
 
 .detailsPrice {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   font-size: 48px;
   color: var(--color-primary);
 }
 
 .detailsHeightInCm {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   font-size: 24px;
   color: #333;
 }
 
 .detailsWateringsPerWeek {
-  margin-top: 0.5rem;
+  margin-top: var(--space-sm);
   font-size: 24px;
   color: #333;
 }
 
 .detailsFertilizerType {
-  margin-top: 0.5rem;
+  margin-top: var(--space-sm);
   font-size: 24px;
   color: #333;
 }

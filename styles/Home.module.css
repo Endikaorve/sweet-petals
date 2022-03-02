@@ -1,18 +1,20 @@
 .main {
-  max-width: 1248px;
-  margin: 0 auto 2rem auto;
+  max-width: var(--container-max-width);
+  margin: 0 auto var(--space-lg) auto;
 }
 
 .section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
 .article {
-  width: 300px;
-  padding: 1rem;
+  --article-width: 300px;
+
+  width: var(--article-width);
+  padding: var(--space-md);
   text-align: center;
   overflow: hidden;
 }
@@ -22,13 +24,15 @@
 }
 
 .articleImgContainer {
-  background-color: #f4f4f4;
+  --image-background-color: #f4f4f4;
+
+  background-color: var(--image-background-color);
   overflow: hidden;
 }
 
 .articleImg {
   width: 100%;
-  transition: 0.15s;
+  transition: var(--animation-transition);
 }
 
 .article:hover .articleImg {
@@ -36,7 +40,7 @@
 }
 
 .articleBody {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
 }
 
 .articleBodyName {
@@ -44,7 +48,7 @@
 }
 
 .articleBodyPrice {
-  margin-top: 0.5rem;
+  margin-top: var(--space-md);
   font-size: 32px;
   color: var(--color-primary);
 }

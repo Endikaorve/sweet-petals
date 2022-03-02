@@ -1,8 +1,10 @@
 .header {
-  padding: 1rem;
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
 }
 
 .header img {
-  height: 70px;
+  --logo-height: 70px;
+  height: var(--logo-height);
   cursor: pointer;
 }

@@ -10,7 +10,15 @@
   --font-size-lg: 24px;
   --font-size-xl: 32px;
 
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
   --background-color: #ffffff;
+
+  --animation-transition: 0.15s;
+
+  --container-max-width: 1248px;
 }
 
 html,
