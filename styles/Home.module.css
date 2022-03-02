@@ -48,7 +48,7 @@
 }
 
 .articleBodyPrice {
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   font-size: 32px;
   color: var(--color-primary);
 }

@@ -4,7 +4,10 @@ import styles from "./Header.module.css";
 const Header = () => (
   <header className={styles.header}>
     <Link href="/">
-      <img src="/assets/img/logo.svg" alt="Sweet Petals" />
+      <div className={styles.logo}>
+        <img src="/assets/img/logo.png" alt="Sweet Petals" />
+        Sweet Petals
+      </div>
     </Link>
   </header>
 );

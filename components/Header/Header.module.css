@@ -3,8 +3,22 @@
   padding: var(--space-md);
 }
 
-.header img {
-  --logo-height: 70px;
-  height: var(--logo-height);
+.logo {
+  --logo-height: 100px;
+  --logo-font-size: 62px;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+
+  font-family: "DancingScript";
+  font-size: var(--logo-font-size);
+  font-weight: 600;
+  color: var(--color-secondary);
+
   cursor: pointer;
+}
+
+.logo img {
+  height: var(--logo-height);
 }

@@ -1,5 +1,6 @@
 :root {
-  --color-primary: #e18787;
+  --color-primary: #f29eb0;
+  --color-secondary: #852951;
 
   --color-gray-light: #cccccc;
   --color-gray: #aaaaaa;
@@ -48,4 +49,11 @@ h4,
 h5,
 p {
   margin: 0;
+}
+
+/** Fonts **/
+
+@font-face {
+  font-family: "DancingScript";
+  src: url(/assets/fonts/DancingScript.ttf);
 }
