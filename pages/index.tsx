@@ -40,10 +40,12 @@ const Home: NextPage = ({ flowers }: any) => {
               return (
                 <Link key={flower.id} href={`/details/${flower.id}`}>
                   <article className={styles.article}>
-                    <img
-                      src={flower.imgUrl}
-                      className={styles.articleImg}
-                    ></img>
+                    <div className={styles.articleImgContainer}>
+                      <img
+                        src={flower.imgUrl}
+                        className={styles.articleImg}
+                      ></img>
+                    </div>
                     <div className={styles.articleBody}>{flower.name}</div>
                   </article>
                 </Link>
