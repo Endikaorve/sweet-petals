@@ -1,11 +1,11 @@
 .main {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1248px;
+  margin: 0 auto 2rem auto;
 }
 
 .inputContainer {
   width: 100%;
-  padding: 4rem 12rem;
+  padding: 1rem 12rem 4rem 12rem;
 }
 
 .input {
@@ -34,7 +34,7 @@
 }
 
 .article {
-  width: 250px;
+  width: 300px;
   padding: 1rem;
   text-align: center;
   overflow: hidden;

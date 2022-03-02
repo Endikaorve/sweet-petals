@@ -1,9 +1,12 @@
 import styles from "../../styles/Details.module.css";
 
 import { NextPage } from "next";
+import Head from "next/head";
+
 import { Flower } from "../../interfaces/interfaces";
 import { flowers } from "../../resources/flowers";
-import Head from "next/head";
+
+import Header from "../../components/Header/Header";
 
 const Details: NextPage = ({ flower }: any) => {
   if (!flower) return <p>Ooops.</p>;
@@ -16,9 +19,11 @@ const Details: NextPage = ({ flower }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header></Header>
+
       <main className={styles.main}>
         <section className={styles.imgContainer}>
-          <img src={flower.imgUrl}></img>
+          <img src={flower.imgUrl} alt={flower.name}></img>
         </section>
         <section className={styles.detailsContainer}>
           <h3 className={styles.detailsName}>{flower.name}</h3>
