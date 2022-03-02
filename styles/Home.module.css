@@ -47,6 +47,11 @@
   font-size: var(--font-size-lg);
 }
 
+.articleBodyBinomialName {
+  font-size: var(--font-size-md);
+  color: var(--color-gray);
+}
+
 .articleBodyPrice {
   margin-top: var(--space-sm);
   font-size: 32px;

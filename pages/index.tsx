@@ -50,6 +50,9 @@ const Home: NextPage = ({ flowers }: any) => {
                     </div>
                     <div className={styles.articleBody}>
                       <p className={styles.articleBodyName}>{flower.name}</p>
+                      <p className={styles.articleBodyBinomialName}>
+                        {flower.binomialName}
+                      </p>
                       <p className={styles.articleBodyPrice}>{flower.price}€</p>
                     </div>
                   </article>
