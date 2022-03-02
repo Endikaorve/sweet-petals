@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Header from "../components/Header/Header";
+import Search from "../components/Search/Search";
 
 import { Flower } from "../interfaces/interfaces";
 import { flowers } from "../resources/flowers";
@@ -12,7 +13,7 @@ import { flowers } from "../resources/flowers";
 const Home: NextPage = ({ flowers }: any) => {
   const [inputText, setInputText] = useState<string>("");
 
-  const handleInputChange = (event: any) => {
+  const onSearch = (event: any) => {
     setInputText(event.target.value);
   };
 
@@ -24,16 +25,11 @@ const Home: NextPage = ({ flowers }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
+      <Header />
 
       <main className={styles.main}>
-        <div className={styles.inputContainer}>
-          <input
-            placeholder="Comienza a escribir para buscar..."
-            className={styles.input}
-            onChange={handleInputChange}
-          ></input>
-        </div>
+        <Search onSearch={onSearch} />
+
         <section className={styles.section}>
           {flowers
             .filter((flower: Flower) => {
@@ -52,7 +48,10 @@ const Home: NextPage = ({ flowers }: any) => {
                         className={styles.articleImg}
                       ></img>
                     </div>
-                    <div className={styles.articleBody}>{flower.name}</div>
+                    <div className={styles.articleBody}>
+                      <p className={styles.articleBodyName}>{flower.name}</p>
+                      <p className={styles.articleBodyPrice}>{flower.price}€</p>
+                    </div>
                   </article>
                 </Link>
               );

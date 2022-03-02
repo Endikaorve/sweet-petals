@@ -3,29 +3,6 @@
   margin: 0 auto 2rem auto;
 }
 
-.inputContainer {
-  width: 100%;
-  padding: 1rem 12rem 4rem 12rem;
-}
-
-.input {
-  width: 100%;
-  margin-bottom: 0;
-  padding: 1rem;
-  border: none;
-  border-bottom: 2px solid var(--color-gray);
-  font-size: 24px;
-  color: var(--color-gray);
-}
-
-.input::placeholder {
-  color: var(--color-gray);
-}
-
-.input:focus-visible {
-  outline: none;
-}
-
 .section {
   display: flex;
   justify-content: center;
@@ -60,5 +37,14 @@
 
 .articleBody {
   margin-top: 1rem;
-  font-size: 24px;
+}
+
+.articleBodyName {
+  font-size: var(--font-size-lg);
+}
+
+.articleBodyPrice {
+  margin-top: 0.5rem;
+  font-size: 32px;
+  color: var(--color-primary);
 }

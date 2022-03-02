@@ -4,9 +4,13 @@
   --color-gray-light: #cccccc;
   --color-gray: #aaaaaa;
 
-  --background-color: #ffffff;
-
   --text-color: #1a1a1a;
+
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+
+  --background-color: #ffffff;
 }
 
 html,
@@ -16,6 +20,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--background-color);
+  font-size: var(--font-size-md);
   color: var(--text-color);
 }
 

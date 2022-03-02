@@ -1,0 +1,22 @@
+.inputContainer {
+  width: 100%;
+  padding: 1rem 12rem 4rem 12rem;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--color-gray);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray);
+}
+
+.input::placeholder {
+  color: var(--color-gray);
+}
+
+.input:focus-visible {
+  outline: none;
+}
