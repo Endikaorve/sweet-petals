@@ -1,7 +1,7 @@
 import styles from "./Search.module.css";
 
 const Search = ({ onSearch }: any) => (
-  <section className={styles.inputContainer}>
+  <section className={styles.inputWrapper}>
     <input
       placeholder="Busca aquí..."
       className={styles.input}

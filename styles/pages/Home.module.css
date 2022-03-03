@@ -1,4 +1,4 @@
-.mainContainer {
+.pageContainer {
   max-width: var(--container-max-width);
   margin: 0 auto var(--space-lg) auto;
 }

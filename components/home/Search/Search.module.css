@@ -1,4 +1,4 @@
-.inputContainer {
+.inputWrapper {
   width: 100%;
   margin-bottom: var(--space-xl);
   padding: 0 12rem;
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 576px) {
-  .inputContainer {
+  .inputWrapper {
     padding: 0 var(--space-lg);
   }
 }

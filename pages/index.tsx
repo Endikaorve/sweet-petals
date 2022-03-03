@@ -38,10 +38,10 @@ const Home: NextPage = ({ flowers }: any) => {
 
       <Header />
 
-      <main className={styles.mainContainer}>
+      <main className={styles.pageContainer}>
         <Search onSearch={onSearch} />
 
-        <CardList flowers={filteredFlowers}></CardList>
+        <CardList flowers={filteredFlowers} />
       </main>
     </>
   );
