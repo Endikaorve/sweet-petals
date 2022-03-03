@@ -6,7 +6,7 @@ import Head from "next/head";
 import { Flower } from "../../interfaces/interfaces";
 import { flowers, FLOWER_FERTILIZER_TYPES } from "../../resources/flowers";
 
-import Header from "../../components/Header/Header";
+import Header from "../../components/shared/Header/Header";
 
 const Details: NextPage = ({ flower }: any) => {
   if (!flower) return <p>Ooops.</p>;
