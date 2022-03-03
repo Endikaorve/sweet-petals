@@ -1,14 +1,33 @@
+import styles from "styles/pages/Home.module.css";
+
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 
 import Header from "components/shared/Header/Header";
-import ListView from "components/home/ListView/ListView";
+import Search from "components/home/Search/Search";
+import CardList from "components/home/CardList/CardList";
 
 import { Flower } from "interfaces/interfaces";
 
 import { flowers } from "resources/flowers";
 
 const Home: NextPage = ({ flowers }: any) => {
+  const [inputText, setInputText] = useState<string>("");
+
+  const onSearch = (event: any) => {
+    setInputText(event.target.value);
+  };
+
+  const filteredFlowers: Flower[] = flowers.filter((flower: Flower) => {
+    const formatedInputText: string = inputText.toLowerCase();
+
+    return (
+      flower.name.toLowerCase().includes(formatedInputText) ||
+      flower.binomialName.toLowerCase().includes(formatedInputText)
+    );
+  });
+
   return (
     <>
       <Head>
@@ -19,7 +38,11 @@ const Home: NextPage = ({ flowers }: any) => {
 
       <Header />
 
-      <ListView flowers={flowers} />
+      <main className={styles.mainContainer}>
+        <Search onSearch={onSearch} />
+
+        <CardList flowers={filteredFlowers}></CardList>
+      </main>
     </>
   );
 };
