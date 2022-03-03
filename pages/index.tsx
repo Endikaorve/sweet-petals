@@ -25,6 +25,11 @@ const Home: NextPage = ({ flowers }: any) => {
 };
 
 Home.getInitialProps = async () => {
+  // const response = await fetch(
+  //   "https://dulces-petalos.herokuapp.com/api/product"
+  // );
+  // const flowers: any = await response.json();
+
   return { flowers: flowers as IFlower[] };
 };
 
