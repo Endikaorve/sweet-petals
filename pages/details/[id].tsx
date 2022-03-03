@@ -19,9 +19,9 @@ const Details: NextPage = ({ flower }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
+      <Header />
 
-      <DetailsView flower={flower}></DetailsView>
+      <DetailsView flower={flower} />
     </>
   );
 };
