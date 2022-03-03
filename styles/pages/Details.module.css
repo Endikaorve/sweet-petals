@@ -75,7 +75,7 @@
   color: var(--color-primary);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 646px) {
   .pageContainer {
     padding: 0 var(--space-md);
     flex-direction: column;

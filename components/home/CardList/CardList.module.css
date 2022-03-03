@@ -9,7 +9,7 @@
   font-size: var(--font-size-lg);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 646px) {
   .main {
     padding: 0 var(--space-md);
   }
