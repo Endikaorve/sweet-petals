@@ -4,7 +4,11 @@ import Link from "next/link";
 
 import { Flower } from "interfaces/interfaces";
 
-const Card = ({ flower }: { flower: Flower }) => (
+interface Props {
+  flower: Flower;
+}
+
+const Card: React.FC<Props> = ({ flower }) => (
   <Link href={`/details/${flower.id}`}>
     <article className={styles.container}>
       <div className={styles.heightInCm}>{flower.heightInCm} cm</div>

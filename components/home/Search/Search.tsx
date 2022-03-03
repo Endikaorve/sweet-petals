@@ -1,6 +1,9 @@
 import styles from "./Search.module.css";
+interface Props {
+  onSearch: React.ChangeEventHandler<HTMLInputElement>;
+}
 
-const Search = ({ onSearch }: any) => (
+const Search: React.FC<Props> = ({ onSearch }) => (
   <section className={styles.inputWrapper}>
     <input
       placeholder="Busca aquí..."

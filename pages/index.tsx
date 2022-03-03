@@ -12,7 +12,11 @@ import { Flower } from "interfaces/interfaces";
 
 import { flowers } from "resources/flowers";
 
-const Home: NextPage = ({ flowers }: any) => {
+interface Props {
+  flowers: Flower[];
+}
+
+const Home: NextPage<Props> = ({ flowers }) => {
   const [inputText, setInputText] = useState<string>("");
 
   const onSearch = (event: any) => {

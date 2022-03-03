@@ -4,7 +4,11 @@ import Card from "components/home/Card/Card";
 
 import { Flower } from "interfaces/interfaces";
 
-const CardList = ({ flowers }: { flowers: Flower[] }) => (
+interface Props {
+  flowers: Flower[];
+}
+
+const CardList: React.FC<Props> = ({ flowers }) => (
   <section className={styles.container}>
     {!flowers.length && (
       <p className={styles.noSearchNotification}>
