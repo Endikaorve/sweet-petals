@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Header from "../components/shared/Header/Header";
-import Search from "../components/Search/Search";
+import Search from "../components/home/Search/Search";
 
 import { Flower } from "../interfaces/interfaces";
 import { flowers } from "../resources/flowers";
