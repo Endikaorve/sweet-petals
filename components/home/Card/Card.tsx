@@ -13,6 +13,7 @@ const Card: React.FC<Props> = ({ flower }) => (
     <article className={styles.container}>
       <div className={styles.heightInCm}>{flower.heightInCm} cm</div>
       <div className={styles.imageWrapper}>
+        <div className={styles.imageFantasy}>+</div>
         <img
           src={flower.imgUrl}
           alt={flower.name}
