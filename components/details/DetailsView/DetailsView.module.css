@@ -31,12 +31,13 @@
 
 .detailsPrice {
   margin-top: var(--space-md);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-lg);
   color: var(--color-primary);
 }
 
 .detailsHeightInCm {
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
   font-size: var(--font-size-lg);
 }
 
