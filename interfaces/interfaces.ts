@@ -1,12 +1,12 @@
-export type FertilizerType = "nitrogen" | "phosphorus";
+export type IFertilizerType = "nitrogen" | "phosphorus";
 
-export interface Flower {
+export interface IFlower {
   id: number;
   name: string;
   binomialName: string;
   price: number;
   imgUrl: string;
   wateringsPerWeek: number;
-  fertilizerType: FertilizerType;
+  fertilizerType: IFertilizerType;
   heightInCm: number;
 }

@@ -3,7 +3,7 @@ import styles from "../../styles/Details.module.css";
 import { NextPage } from "next";
 import Head from "next/head";
 
-import { Flower } from "../../interfaces/interfaces";
+import { IFlower } from "../../interfaces/interfaces";
 import { flowers, FLOWER_FERTILIZER_TYPES } from "../../resources/flowers";
 
 import Header from "../../components/shared/Header/Header";
@@ -49,7 +49,7 @@ const Details: NextPage = ({ flower }: any) => {
 Details.getInitialProps = async ({ query }) => {
   const { id } = query;
   return {
-    flower: flowers.find((flower: Flower) => flower.id.toString() === id),
+    flower: flowers.find((flower: IFlower) => flower.id.toString() === id),
   };
 };
 

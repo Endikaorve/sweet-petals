@@ -4,12 +4,12 @@ import Link from "next/link";
 
 import Search from "../Search/Search";
 import { useState } from "react";
-import { Flower } from "../../../interfaces/interfaces";
+import { IFlower } from "../../../interfaces/interfaces";
 
-const ListView = ({ flowers }: { flowers: Flower[] }) => {
+const ListView = ({ flowers }: { flowers: IFlower[] }) => {
   const [inputText, setInputText] = useState<string>("");
 
-  const filteredFlowers: Flower[] = flowers.filter((flower: Flower) => {
+  const filteredFlowers: IFlower[] = flowers.filter((flower: IFlower) => {
     const formatedInputText: string = inputText.toLowerCase();
 
     return (
@@ -33,7 +33,7 @@ const ListView = ({ flowers }: { flowers: Flower[] }) => {
           </p>
         )}
 
-        {filteredFlowers.map((flower: Flower) => {
+        {filteredFlowers.map((flower: IFlower) => {
           return (
             <Link key={flower.id} href={`/details/${flower.id}`}>
               <article className={styles.article}>
