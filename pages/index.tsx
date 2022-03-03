@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Header from "../components/shared/Header/Header";
-import ListView from "../components/home/ListView/ListView";
+import Header from "components/shared/Header/Header";
+import ListView from "components/home/ListView/ListView";
 
-import { flowers } from "../resources/flowers";
+import { IFlower } from "interfaces/interfaces";
+
+import { flowers } from "resources/flowers";
 
 const Home: NextPage = ({ flowers }: any) => {
   return (
@@ -23,7 +25,7 @@ const Home: NextPage = ({ flowers }: any) => {
 };
 
 Home.getInitialProps = async () => {
-  return { flowers: flowers };
+  return { flowers: flowers as IFlower[] };
 };
 
 export default Home;

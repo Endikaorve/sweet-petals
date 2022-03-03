@@ -2,7 +2,7 @@ import styles from "./Flower.module.css";
 
 import Link from "next/link";
 
-import { IFlower } from "../../../interfaces/interfaces";
+import { IFlower } from "interfaces/interfaces";
 
 const Flower = ({ flower }: { flower: IFlower }) => (
   <Link href={`/details/${flower.id}`}>

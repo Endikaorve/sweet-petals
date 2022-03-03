@@ -1,8 +1,8 @@
 import styles from "./FlowersContainer.module.css";
 
-import Flower from "../Flower/Flower";
+import Flower from "components/home/Flower/Flower";
 
-import { IFlower } from "../../../interfaces/interfaces";
+import { IFlower } from "interfaces/interfaces";
 
 const FlowersContainer = ({ flowers }: { flowers: IFlower[] }) => (
   <section className={styles.section}>

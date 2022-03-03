@@ -2,10 +2,10 @@ import styles from "./ListView.module.css";
 
 import { useState } from "react";
 
-import Search from "../Search/Search";
-import FlowersContainer from "../FlowersContainer/FlowersContainer";
+import Search from "components/home/Search/Search";
+import FlowersContainer from "components/home/FlowersContainer/FlowersContainer";
 
-import { IFlower } from "../../../interfaces/interfaces";
+import { IFlower } from "interfaces/interfaces";
 
 const ListView = ({ flowers }: { flowers: IFlower[] }) => {
   const [inputText, setInputText] = useState<string>("");

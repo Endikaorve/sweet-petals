@@ -1,12 +1,13 @@
-import styles from "../../styles/Details.module.css";
+import styles from "styles/Details.module.css";
 
 import { NextPage } from "next";
 import Head from "next/head";
 
-import { IFlower } from "../../interfaces/interfaces";
-import { flowers, FLOWER_FERTILIZER_TYPES } from "../../resources/flowers";
+import Header from "components/shared/Header/Header";
 
-import Header from "../../components/shared/Header/Header";
+import { IFlower } from "interfaces/interfaces";
+
+import { flowers, FLOWER_FERTILIZER_TYPES } from "resources/flowers";
 
 const Details: NextPage = ({ flower }: any) => {
   if (!flower) return <p>Ooops.</p>;
