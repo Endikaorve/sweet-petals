@@ -1,8 +1,9 @@
+import styles from "styles/pages/Details.module.css";
+
 import { NextPage } from "next";
 import Head from "next/head";
 
 import Header from "components/shared/Header/Header";
-import DetailsView from "components/details/DetailsView/DetailsView";
 
 import { Flower } from "interfaces/interfaces";
 
@@ -21,7 +22,31 @@ const Details: NextPage = ({ flower }: any) => {
 
       <Header />
 
-      <DetailsView flower={flower} />
+      <main className={styles.pageContainer}>
+        <section className={styles.imageWrapper}>
+          <img
+            className={styles.image}
+            src={flower.imgUrl}
+            alt={flower.name}
+          ></img>
+        </section>
+        <section className={styles.infoContainer}>
+          <h2 className={styles.name}>{flower.name}</h2>
+          <p className={styles.binomialName}>{flower.binomialName}</p>
+          <p className={styles.price}>{flower.price}€</p>
+          <p className={styles.heightInCm}>
+            <b>Altura:</b> {flower.heightInCm}cm
+          </p>
+          <p className={styles.fertilizerType}>
+            <b>Fertilizante:</b>{" "}
+            {FLOWER_FERTILIZER_TYPES[flower.fertilizerType]}
+          </p>
+          <p className={styles.wateringsPerWeek}>
+            <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
+          </p>
+          <button className={styles.addToCartButton}>Añadir al carrito</button>
+        </section>
+      </main>
     </>
   );
 };
