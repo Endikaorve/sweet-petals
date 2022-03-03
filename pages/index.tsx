@@ -7,6 +7,7 @@ import { useState } from "react";
 import Header from "components/shared/Header/Header";
 import Search from "components/home/Search/Search";
 import CardList from "components/home/CardList/CardList";
+import Footer from "components/shared/Footer/Footer";
 
 import { Flower } from "interfaces/interfaces";
 
@@ -47,6 +48,8 @@ const Home: NextPage<Props> = ({ flowers }) => {
 
         <CardList flowers={filteredFlowers} />
       </main>
+
+      <Footer />
     </>
   );
 };
