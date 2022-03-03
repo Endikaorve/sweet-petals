@@ -17,6 +17,7 @@
 
 .imgContainer img {
   width: 60%;
+  object-fit: cover;
 }
 
 .detailsName {
