@@ -3,7 +3,7 @@ import styles from "./ListView.module.css";
 import { useState } from "react";
 
 import Search from "components/home/Search/Search";
-import FlowersContainer from "components/home/FlowersContainer/FlowersContainer";
+import CardList from "components/home/CardList/CardList";
 
 import { Flower } from "interfaces/interfaces";
 
@@ -27,7 +27,7 @@ const ListView = ({ flowers }: { flowers: Flower[] }) => {
     <main className={styles.main}>
       <Search onSearch={onSearch} />
 
-      <FlowersContainer flowers={filteredFlowers}></FlowersContainer>
+      <CardList flowers={filteredFlowers}></CardList>
     </main>
   );
 };

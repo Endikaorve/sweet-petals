@@ -1,10 +1,10 @@
-import styles from "./FlowersContainer.module.css";
+import styles from "./CardList.module.css";
 
 import Card from "components/home/Card/Card";
 
 import { Flower } from "interfaces/interfaces";
 
-const FlowersContainer = ({ flowers }: { flowers: Flower[] }) => (
+const CardList = ({ flowers }: { flowers: Flower[] }) => (
   <section className={styles.section}>
     {!flowers.length && (
       <p className={styles.noSearchNotification}>
@@ -18,4 +18,4 @@ const FlowersContainer = ({ flowers }: { flowers: Flower[] }) => (
   </section>
 );
 
-export default FlowersContainer;
+export default CardList;
