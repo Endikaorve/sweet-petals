@@ -23,7 +23,7 @@
 .logo h1 {
   font-family: "DancingScript";
   font-size: var(--logo-font-size);
-  font-weight: 600;
+  font-weight: var(--font-weight-lg);
   color: var(--color-secondary);
 }
 

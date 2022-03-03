@@ -17,7 +17,7 @@
   right: 0;
   padding: var(--space-xs) var(--space-sm);
 
-  font-weight: 700;
+  font-weight: var(--font-weight-lg);
   color: white;
 
   background-color: var(--color-primary);

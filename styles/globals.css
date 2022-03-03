@@ -12,6 +12,10 @@
   --font-size-md: 16px;
   --font-size-lg: 24px;
   --font-size-xl: 32px;
+  --font-size-xxl: 48px;
+
+  --font-weight-md: 500px;
+  --font-weight-lg: 600px;
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;

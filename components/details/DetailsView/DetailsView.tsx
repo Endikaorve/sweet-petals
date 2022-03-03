@@ -22,7 +22,7 @@ const DetailsView = ({ flower }: { flower: IFlower }) => (
       <p className={styles.detailsWateringsPerWeek}>
         <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
       </p>
-      <button className={styles.button}>Añadir al carrito</button>
+      <button className={styles.detailsButton}>Añadir al carrito</button>
     </section>
   </main>
 );
