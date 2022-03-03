@@ -1,10 +1,10 @@
 import styles from "./FlowersContainer.module.css";
 
-import Flower from "components/home/Flower/Flower";
+import Card from "components/home/Card/Card";
 
-import { IFlower } from "interfaces/interfaces";
+import { Flower } from "interfaces/interfaces";
 
-const FlowersContainer = ({ flowers }: { flowers: IFlower[] }) => (
+const FlowersContainer = ({ flowers }: { flowers: Flower[] }) => (
   <section className={styles.section}>
     {!flowers.length && (
       <p className={styles.noSearchNotification}>
@@ -12,8 +12,8 @@ const FlowersContainer = ({ flowers }: { flowers: IFlower[] }) => (
       </p>
     )}
 
-    {flowers.map((flower: IFlower) => (
-      <Flower key={flower.id} flower={flower}></Flower>
+    {flowers.map((flower: Flower) => (
+      <Card key={flower.id} flower={flower}></Card>
     ))}
   </section>
 );

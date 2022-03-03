@@ -1,6 +1,6 @@
 export type IFertilizerType = "nitrogen" | "phosphorus";
 
-export interface IFlower {
+export interface Flower {
   id: number;
   name: string;
   binomialName: string;

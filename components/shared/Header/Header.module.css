@@ -4,8 +4,8 @@
 }
 
 .logo {
-  --logo-height: 100px;
-  --logo-font-size: 62px;
+  --logo-height: 80px;
+  --logo-font-size: 48px;
 
   width: fit-content;
 
@@ -16,11 +16,11 @@
   cursor: pointer;
 }
 
-.logo img {
+.logoImage {
   height: var(--logo-height);
 }
 
-.logo h1 {
+.logoName {
   font-family: "DancingScript";
   font-size: var(--logo-font-size);
   font-weight: var(--font-weight-lg);

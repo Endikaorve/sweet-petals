@@ -5,12 +5,12 @@ import { useState } from "react";
 import Search from "components/home/Search/Search";
 import FlowersContainer from "components/home/FlowersContainer/FlowersContainer";
 
-import { IFlower } from "interfaces/interfaces";
+import { Flower } from "interfaces/interfaces";
 
-const ListView = ({ flowers }: { flowers: IFlower[] }) => {
+const ListView = ({ flowers }: { flowers: Flower[] }) => {
   const [inputText, setInputText] = useState<string>("");
 
-  const filteredFlowers: IFlower[] = flowers.filter((flower: IFlower) => {
+  const filteredFlowers: Flower[] = flowers.filter((flower: Flower) => {
     const formatedInputText: string = inputText.toLowerCase();
 
     return (

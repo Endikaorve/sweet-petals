@@ -1,6 +1,6 @@
-import { IFlower } from "../interfaces/interfaces";
+import { Flower } from "../interfaces/interfaces";
 
-export const flowers: IFlower[] = [
+export const flowers: Flower[] = [
   {
     id: 1,
     name: "Rosa silvestre",

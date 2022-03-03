@@ -1,28 +1,28 @@
 import styles from "./DetailsView.module.css";
 
-import { IFlower } from "interfaces/interfaces";
+import { Flower } from "interfaces/interfaces";
 
 import { FLOWER_FERTILIZER_TYPES } from "resources/flowers";
 
-const DetailsView = ({ flower }: { flower: IFlower }) => (
-  <main className={styles.main}>
-    <section className={styles.imgContainer}>
-      <img src={flower.imgUrl} alt={flower.name}></img>
+const DetailsView = ({ flower }: { flower: Flower }) => (
+  <main className={styles.mainContainer}>
+    <section className={styles.imageContainer}>
+      <img className={styles.image} src={flower.imgUrl} alt={flower.name}></img>
     </section>
-    <section className={styles.detailsContainer}>
-      <h2 className={styles.detailsName}>{flower.name}</h2>
-      <p className={styles.detailsBinomialName}>{flower.binomialName}</p>
-      <p className={styles.detailsPrice}>{flower.price}€</p>
-      <p className={styles.detailsHeightInCm}>
+    <section className={styles.sheetContainer}>
+      <h2 className={styles.sheetName}>{flower.name}</h2>
+      <p className={styles.sheetBinomialName}>{flower.binomialName}</p>
+      <p className={styles.sheetPrice}>{flower.price}€</p>
+      <p className={styles.sheetHeightInCm}>
         <b>Altura:</b> {flower.heightInCm}cm
       </p>
-      <p className={styles.detailsFertilizerType}>
+      <p className={styles.sheetFertilizerType}>
         <b>Fertilizante:</b> {FLOWER_FERTILIZER_TYPES[flower.fertilizerType]}
       </p>
-      <p className={styles.detailsWateringsPerWeek}>
+      <p className={styles.sheetWateringsPerWeek}>
         <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
       </p>
-      <button className={styles.detailsButton}>Añadir al carrito</button>
+      <button className={styles.sheetButton}>Añadir al carrito</button>
     </section>
   </main>
 );

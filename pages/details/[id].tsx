@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from "components/shared/Header/Header";
 import DetailsView from "components/details/DetailsView/DetailsView";
 
-import { IFlower } from "interfaces/interfaces";
+import { Flower } from "interfaces/interfaces";
 
 import { flowers, FLOWER_FERTILIZER_TYPES } from "resources/flowers";
 
@@ -29,7 +29,7 @@ const Details: NextPage = ({ flower }: any) => {
 Details.getInitialProps = async ({ query }) => {
   const { id } = query;
   return {
-    flower: flowers.find((flower: IFlower) => flower.id.toString() === id),
+    flower: flowers.find((flower: Flower) => flower.id.toString() === id),
   };
 };
 

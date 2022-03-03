@@ -1,58 +1,58 @@
-.main {
+.mainContainer {
   max-width: var(--container-max-width);
   margin: 0 auto;
   display: flex;
 }
 
-.imgContainer,
-.detailsContainer {
+.imageContainer,
+.sheetContainer {
   width: 50%;
   padding: 0 var(--space-md);
 }
 
-.imgContainer {
+.imageContainer {
   display: flex;
   justify-content: right;
 }
 
-.imgContainer img {
+.image {
   width: 60%;
   object-fit: cover;
 }
 
-.detailsName {
+.sheetName {
   font-size: var(--font-size-xl);
 }
 
-.detailsBinomialName {
+.sheetBinomialName {
   margin-top: var(--space-sm);
   font-size: var(--font-size-lg);
   color: var(--color-gray);
 }
 
-.detailsPrice {
+.sheetPrice {
   margin-top: var(--space-md);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-lg);
   color: var(--color-primary);
 }
 
-.detailsHeightInCm {
+.sheetHeightInCm {
   margin-top: var(--space-md);
   font-size: var(--font-size-lg);
 }
 
-.detailsWateringsPerWeek {
+.sheetWateringsPerWeek {
   margin-top: var(--space-md);
   font-size: var(--font-size-lg);
 }
 
-.detailsFertilizerType {
+.sheetFertilizerType {
   margin-top: var(--space-md);
   font-size: var(--font-size-lg);
 }
 
-.detailsButton {
+.sheetButton {
   margin-top: var(--space-lg);
   padding: var(--space-sm) var(--space-md);
 
@@ -67,7 +67,7 @@
   transition: var(--animation-transition);
 }
 
-.detailsButton:hover {
+.sheetButton:hover {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
 
@@ -75,28 +75,25 @@
 }
 
 @media (max-width: 576px) {
-  .main {
+  .mainContainer {
     padding: 0 var(--space-md);
     flex-direction: column;
   }
 
-  .imgContainer {
+  .imageContainer,
+  .image {
     width: 100%;
   }
 
-  .imgContainer img {
-    width: 100%;
-  }
-
-  .detailsContainer {
+  .sheetContainer {
     width: 100%;
     padding: var(--space-md);
     padding-bottom: var(--space-lg);
   }
 
-  .detailsName,
-  .detailsPrice,
-  .detailsBinomialName {
+  .sheetName,
+  .sheetPrice,
+  .sheetBinomialName {
     text-align: center;
   }
 }

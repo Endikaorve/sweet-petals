@@ -6,8 +6,12 @@ const Header = () => (
   <header className={styles.header}>
     <Link href="/">
       <div className={styles.logo}>
-        <img src="/assets/img/logo.png" alt="Sweet Petals" />
-        <h1>Sweet Petals</h1>
+        <img
+          className={styles.logoImage}
+          src="/assets/img/logo.png"
+          alt="Sweet Petals"
+        />
+        <h1 className={styles.logoName}>Sweet Petals</h1>
       </div>
     </Link>
   </header>

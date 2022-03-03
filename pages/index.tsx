@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from "components/shared/Header/Header";
 import ListView from "components/home/ListView/ListView";
 
-import { IFlower } from "interfaces/interfaces";
+import { Flower } from "interfaces/interfaces";
 
 import { flowers } from "resources/flowers";
 
@@ -30,7 +30,7 @@ Home.getInitialProps = async () => {
   // );
   // const flowers: any = await response.json();
 
-  return { flowers: flowers as IFlower[] };
+  return { flowers: flowers as Flower[] };
 };
 
 export default Home;
