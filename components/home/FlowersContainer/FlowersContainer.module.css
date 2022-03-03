@@ -1,0 +1,78 @@
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.noSearchNotification {
+  font-size: var(--font-size-lg);
+}
+
+.article {
+  --article-width: 300px;
+
+  position: relative;
+  width: var(--article-width);
+  text-align: center;
+  overflow: hidden;
+}
+
+.article:hover {
+  cursor: pointer;
+}
+
+.articleHeightInCm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--space-xs) var(--space-sm);
+
+  font-weight: 700;
+  color: white;
+
+  background-color: var(--color-primary);
+
+  z-index: 10;
+}
+
+.articleImgContainer {
+  --image-background-color: #f4f4f4;
+
+  background-color: var(--image-background-color);
+  overflow: hidden;
+}
+
+.articleImg {
+  width: 100%;
+  transition: var(--animation-transition);
+}
+
+.article:hover .articleImg {
+  transform: scale(1.3) rotate(10deg);
+}
+
+.articleBody {
+  padding: var(--space-md) 0 var(--space-sm) 0;
+}
+
+.articleBodyName {
+  font-size: var(--font-size-lg);
+}
+
+.articleBodyBinomialName {
+  font-size: var(--font-size-md);
+  color: var(--color-gray);
+}
+
+.articleBodyPrice {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 0 var(--space-md);
+  }
+}
