@@ -4,12 +4,13 @@
   --color-white: #ffffff;
   --color-gray-light: #cccccc;
   --color-gray: #aaaaaa;
+  --color-black: #1a1a1a;
 
   --font-family: "Quicksand";
 
-  --text-color: #1a1a1a;
+  --text-color: var(--color-black);
 
-  --background-color: #ffffff;
+  --background-color: var(--color-white);
 
   --flower-card-background-color: #f8f8f8;
 
@@ -34,6 +35,12 @@
   --container-max-width: 1296px;
 }
 
+[data-theme="dark"] {
+  --background-color: var(--color-black);
+  --text-color: var(--color-white);
+  --flower-card-background-color: #282828;
+}
+
 html,
 body {
   padding: 0;
@@ -44,6 +51,8 @@ body {
   background-color: var(--background-color);
   font-size: var(--font-size-md);
   color: var(--text-color);
+
+  transition: var(--animation-transition);
 }
 
 a {

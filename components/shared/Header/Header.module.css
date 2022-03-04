@@ -1,11 +1,15 @@
 .header {
   margin-bottom: var(--space-md);
   padding: var(--space-md);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  --logo-height: 80px;
-  --logo-font-size: 48px;
+  --logo-height: 50px;
+  --logo-font-size: var(--font-size-xl);
 
   width: fit-content;
 
@@ -27,9 +31,18 @@
   color: var(--color-secondary);
 }
 
-@media (max-width: 646px) {
-  .logo {
-    --logo-height: 50px;
-    --logo-font-size: var(--font-size-xl);
-  }
+.themeButton {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.themeButton:hover {
+  background-color: var(--flower-card-background-color) !important;
 }
