@@ -13,6 +13,7 @@
 
 .image {
   width: 60%;
+  background-color: var(--flower-card-background-color);
   object-fit: cover;
 }
 

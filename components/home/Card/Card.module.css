@@ -26,12 +26,9 @@
 }
 
 .imageWrapper {
-  --image-background-color: #f8f8f8;
-
   position: relative;
   display: flex;
 
-  background-color: var(--image-background-color);
   overflow: hidden;
 }
 
@@ -55,6 +52,7 @@
 
 .image {
   width: 100%;
+  background-color: var(--flower-card-background-color);
   transition: var(--animation-transition);
 }
 

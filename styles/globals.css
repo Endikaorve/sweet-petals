@@ -9,6 +9,10 @@
 
   --text-color: #1a1a1a;
 
+  --background-color: #ffffff;
+
+  --flower-card-background-color: #f8f8f8;
+
   --font-size-md: 16px;
   --font-size-lg: 24px;
   --font-size-xl: 32px;
@@ -22,8 +26,6 @@
   --space-md: 1rem;
   --space-lg: 2rem;
   --space-xl: 4rem;
-
-  --background-color: #ffffff;
 
   --animation-transition: 0.4s;
 

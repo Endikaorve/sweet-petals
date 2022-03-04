@@ -8,6 +8,7 @@
   width: 100%;
   padding: var(--space-md);
   border: none;
+  background-color: transparent;
   border-bottom: 2px solid var(--color-gray);
   font-size: var(--font-size-lg);
   color: var(--color-gray);
