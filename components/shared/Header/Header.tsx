@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </Link>
 
-      {theme === "dark" && (
+      {theme && theme === "dark" && (
         <button
           className={styles.themeButton}
           onClick={() => setTheme("light")}
@@ -32,7 +32,7 @@ const Header = () => {
         </button>
       )}
 
-      {theme !== "dark" && (
+      {theme && theme !== "dark" && (
         <button className={styles.themeButton} onClick={() => setTheme("dark")}>
           <DarkThemeIcon></DarkThemeIcon>
         </button>
