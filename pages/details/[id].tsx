@@ -3,6 +3,7 @@ import styles from "styles/pages/Details.module.css";
 import { NextPage } from "next";
 import Head from "next/head";
 
+import Container from "components/ui/objects/Container/Container";
 import Header from "components/common/Header/Header";
 
 import { Flower } from "interfaces/interfaces";
@@ -20,33 +21,37 @@ const Details: NextPage = ({ flower }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Container>
+        <Header />
 
-      <main className={styles.pageContainer}>
-        <section className={styles.imageWrapper}>
-          <img
-            className={styles.image}
-            src={flower.imgUrl}
-            alt={flower.name}
-          ></img>
-        </section>
-        <section className={styles.infoContainer}>
-          <h2 className={styles.name}>{flower.name}</h2>
-          <p className={styles.binomialName}>{flower.binomialName}</p>
-          <p className={styles.price}>{flower.price}€</p>
-          <p className={styles.heightInCm}>
-            <b>Altura:</b> {flower.heightInCm}cm
-          </p>
-          <p className={styles.fertilizerType}>
-            <b>Fertilizante:</b>{" "}
-            {FLOWER_FERTILIZER_TYPES[flower.fertilizerType]}
-          </p>
-          <p className={styles.wateringsPerWeek}>
-            <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
-          </p>
-          <button className={styles.addToCartButton}>Añadir al carrito</button>
-        </section>
-      </main>
+        <div className={styles.detailsContainer}>
+          <section className={styles.imageWrapper}>
+            <img
+              className={styles.image}
+              src={flower.imgUrl}
+              alt={flower.name}
+            ></img>
+          </section>
+          <section className={styles.infoContainer}>
+            <h2 className={styles.name}>{flower.name}</h2>
+            <p className={styles.binomialName}>{flower.binomialName}</p>
+            <p className={styles.price}>{flower.price}€</p>
+            <p className={styles.heightInCm}>
+              <b>Altura:</b> {flower.heightInCm}cm
+            </p>
+            <p className={styles.fertilizerType}>
+              <b>Fertilizante:</b>{" "}
+              {FLOWER_FERTILIZER_TYPES[flower.fertilizerType]}
+            </p>
+            <p className={styles.wateringsPerWeek}>
+              <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
+            </p>
+            <button className={styles.addToCartButton}>
+              Añadir al carrito
+            </button>
+          </section>
+        </div>
+      </Container>
     </>
   );
 };

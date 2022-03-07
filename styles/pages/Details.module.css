@@ -1,6 +1,4 @@
-.pageContainer {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
+.detailsContainer {
   display: flex;
 }
 
