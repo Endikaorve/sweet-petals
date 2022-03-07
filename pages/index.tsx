@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useState } from "react";
 
 import Header from "components/common/Header/Header";
+import Container from "components/ui/objects/Container/Container";
 import Search from "components/ui/atoms/Search/Search";
 import CardList from "components/ui/molecules/CardList/CardList";
 
@@ -42,11 +43,11 @@ const Home: NextPage<Props> = ({ flowers }) => {
 
       <Header />
 
-      <main className={styles.pageContainer}>
+      <Container>
         <Search onSearch={onSearch} />
 
         <CardList flowers={filteredFlowers} />
-      </main>
+      </Container>
     </>
   );
 };
