@@ -5,8 +5,8 @@ import Head from "next/head";
 import { useState } from "react";
 
 import Header from "components/shared/Header/Header";
-import Search from "components/home/Search/Search";
-import CardList from "components/home/CardList/CardList";
+import Search from "components/ui/atoms/Search/Search";
+import CardList from "components/ui/molecules/CardList/CardList";
 
 import { Flower } from "interfaces/interfaces";
 

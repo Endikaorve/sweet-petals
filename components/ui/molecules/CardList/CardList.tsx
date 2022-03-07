@@ -1,6 +1,6 @@
 import styles from "./CardList.module.css";
 
-import Card from "components/home/Card/Card";
+import Card from "components/ui/atoms/Card/Card";
 
 import { Flower } from "interfaces/interfaces";
 
