@@ -1,4 +1,4 @@
-import styles from "styles/pages/Details.module.css";
+import styles from "./Details.module.css";
 
 import { NextPage } from "next";
 import Head from "next/head";
