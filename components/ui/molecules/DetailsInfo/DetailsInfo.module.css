@@ -1,0 +1,49 @@
+.infoContainer {
+  width: 50%;
+  padding: 0 var(--space-md);
+}
+
+.name {
+  font-size: var(--font-size-xl);
+}
+
+.binomialName {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray);
+}
+
+.price {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-lg);
+  color: var(--color-primary);
+}
+
+.heightInCm {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
+}
+
+.wateringsPerWeek {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
+}
+
+.fertilizerType {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 646px) {
+  .infoContainer {
+    width: 100%;
+    padding: var(--space-md) 0;
+  }
+
+  .name,
+  .binomialName,
+  .price {
+    text-align: center;
+  }
+}
