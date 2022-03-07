@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 
-import Header from "components/shared/Header/Header";
+import Header from "components/common/Header/Header";
 import Search from "components/ui/atoms/Search/Search";
 import CardList from "components/ui/molecules/CardList/CardList";
 

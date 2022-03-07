@@ -3,7 +3,7 @@ import styles from "styles/pages/Details.module.css";
 import { NextPage } from "next";
 import Head from "next/head";
 
-import Header from "components/shared/Header/Header";
+import Header from "components/common/Header/Header";
 
 import { Flower } from "interfaces/interfaces";
 
