@@ -11,7 +11,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className={styles.header}>
+    <header className={styles.mainHeader}>
       <Link href="/">
         <div className={styles.logo}>
           <img

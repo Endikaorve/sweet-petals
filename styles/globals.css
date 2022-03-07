@@ -32,7 +32,7 @@
 
   --breakpoint-sm: 646px;
 
-  --container-max-width: 1296px;
+  --container-max-width: 1328px;
 }
 
 [data-theme="dark"] {
@@ -51,6 +51,8 @@ body {
   background-color: var(--background-color);
   font-size: var(--font-size-md);
   color: var(--text-color);
+
+  scrollbar-gutter: stable both-edges;
 
   transition: var(--animation-transition);
 }

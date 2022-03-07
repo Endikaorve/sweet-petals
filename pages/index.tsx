@@ -41,9 +41,9 @@ const Home: NextPage<Props> = ({ flowers }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
       <Container>
+        <Header />
+
         <Search onSearch={onSearch} />
 
         <CardList flowers={filteredFlowers} />
