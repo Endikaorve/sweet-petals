@@ -1,9 +1,11 @@
 :root {
   --color-primary: #f29eb0;
+  --color-primary-shade: #f08fa4;
   --color-secondary: #852951;
   --color-white: #ffffff;
   --color-gray-light: #cccccc;
   --color-gray: #aaaaaa;
+  --color-gray-shade: #999999;
   --color-black: #1a1a1a;
 
   --font-family: "Quicksand";

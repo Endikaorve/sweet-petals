@@ -2,9 +2,11 @@ import styles from "styles/pages/Details.module.css";
 
 import { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 import Container from "components/ui/objects/Container/Container";
 import Header from "components/common/Header/Header";
+import Button from "components/ui/atoms/Button/Button";
 
 import { Flower } from "interfaces/interfaces";
 
@@ -46,9 +48,12 @@ const Details: NextPage = ({ flower }: any) => {
             <p className={styles.wateringsPerWeek}>
               <b>Regar:</b> {flower.wateringsPerWeek} veces por semana
             </p>
-            <button className={styles.addToCartButton}>
-              Añadir al carrito
-            </button>
+            <Button variant="primary">Añadir al carrito</Button>
+            <br />
+
+            <Button variant="secondary">
+              <Link href="/">Volver atrás</Link>
+            </Button>
           </section>
         </div>
       </Container>

@@ -52,43 +52,23 @@
   font-size: var(--font-size-lg);
 }
 
-.addToCartButton {
-  margin-top: var(--space-lg);
-  padding: var(--space-sm) var(--space-md);
-
-  background-color: var(--color-primary);
-  border: none;
-
-  color: white;
-  font-size: var(--font-size-lg);
-
-  cursor: pointer;
-
-  transition: var(--animation-transition);
-}
-
-.addToCartButton:hover {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
-
-  color: var(--color-primary);
-}
-
 @media (max-width: 646px) {
-  .pageContainer {
-    padding: 0 var(--space-md);
+  .detailsContainer {
     flex-direction: column;
   }
 
-  .imageWrapper,
+  .imageWrapper {
+    width: 100%;
+    padding: 0;
+  }
+
   .image {
     width: 100%;
   }
 
   .infoContainer {
     width: 100%;
-    padding: var(--space-md);
-    padding-bottom: var(--space-lg);
+    padding: var(--space-md) 0;
   }
 
   .name,

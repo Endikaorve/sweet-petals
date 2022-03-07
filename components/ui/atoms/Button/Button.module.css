@@ -1,0 +1,30 @@
+.btn {
+  margin-top: var(--space-lg);
+  padding: var(--space-sm) var(--space-md);
+
+  border: none;
+
+  font-size: var(--font-size-lg);
+
+  cursor: pointer;
+
+  transition: var(--animation-transition);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-shade);
+}
+
+.btn-secondary {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-gray-shade);
+}
